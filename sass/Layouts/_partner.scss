@@ -1,0 +1,41 @@
+.partner {
+    padding: 200px 0 120px 0;
+
+    .partner_container {
+        width: 80%;
+        margin: auto;
+
+        .title {
+            h1 {
+                @include styleText(72px, 64px, $color-black-1, $ff-1, 600)
+            }
+        }
+
+        .grid_logo {
+            margin-top: 60px;
+            // row-gap: 60px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+            .item_bottom,
+            .item_top {
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .item_top {
+                border-right: 1px solid $color-gray-1;
+                border-bottom: 1px solid $color-gray-1;
+            }
+
+            .item_bottom {
+                border-right: 1px solid $color-gray-1;
+            }
+
+            .item_top.specical,
+            .item_bottom.specical {
+                border-right: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.banner {
+    height: 680px;
+    background: black;
+
+    .banner_container {
+        width: 80%;
+        margin-left: 205px;
+        display: flex;
+
+        .banner_container_left {
+            h1 {
+                margin-left: 15px;
+                margin-top: 196px;
+                @include styleText(72px,$fs-3,white,$ff-1,null);
+            }
+            p {
+                margin-top: 36px;
+                margin-left: 15px;
+                @include styleText(36px,$fs-1,$color-gray-1,null,null);
+            }
+
+            button {
+                border: none;
+                margin-top: 20px;
+            }
+        }
+    }
+}

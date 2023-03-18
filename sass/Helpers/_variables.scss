@@ -1,0 +1,53 @@
+
+
+//color
+$color-black-0: #29303b;
+$color-black-1:#121212;
+$color-black-2:#332200;
+$color-button-0:linear-gradient(180deg, #FFBB00 0%, #F2A60C 100%);
+$color-yellow-0: #FFBB00;
+$color-yellow-1:  #E4A30B;
+$color-yellow-2: #A66F00;
+$color-gray-0:#9C9C9C;
+$color-gray-1: #B3B3B3;
+$color-gray-2: #595959;
+$color-gray-3: #f7f7f7;
+
+
+
+//dark theme
+$color-dark-0:#152e4d;
+//font family
+$ff-0: 'Roboto', sans-serif;
+$ff-1: 'Poppins',
+sans-serif;
+$ff-2: 'Merriweather', serif;
+//font-size
+$fs-0: 18px;
+$fs-1:24px;
+$fs-2:32px;
+$fs-3:64px;
+
+//font-weight
+$fw-0: normal;
+$fw-1: 600;
+
+//line-height
+$line-height-0: 1.43;
+//margin
+$mg-0:5px;
+
+//padding
+$pd-0:10px;
+
+//border radius
+$border-radius:2px;
+
+
+//break-point
+$breakpoints: (
+'extra-large':1200px,
+'large':992px,
+'medium':768px,
+'small':576px,
+);

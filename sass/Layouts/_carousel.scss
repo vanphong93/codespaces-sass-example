@@ -1,0 +1,51 @@
+.carousel {
+    .carousel_container {
+        width: 90%;
+        margin: auto;
+        // border: 1px solid red;
+        padding: 235px 0px;
+
+        h1 {
+            margin-bottom: 48px;
+            font-size: $fs-3;
+            font-family: $ff-1;
+            line-height: 72px;
+            color: $color-black-1;
+        }
+
+        .carousel_container_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 30px;
+
+            .item {
+                .detail {
+                    margin-top: 16px;
+                    display: flex;
+
+                    .name {
+                        margin-left: 8px;
+
+                        h4 {
+                            @include styleText(40px,
+                                $fs-2,
+                                $color-black-1,
+                                null, null);
+                        }
+
+                        span {
+                            @include styleText(null, null, $color-gray-2, null, 500);
+                            margin-top: 8px;
+                        }
+                    }
+                }
+
+                img.bicycle {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+        }
+    }
+}

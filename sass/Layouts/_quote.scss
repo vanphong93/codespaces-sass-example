@@ -1,0 +1,34 @@
+.quote {
+    background-color: $color-yellow-0;
+    height: 80vh;
+    display: flex;
+
+    .quote_left {
+        img {
+            width: 50vw;
+            height: 80vh;
+        }
+    }
+
+    .quote_right {
+        display: flex;
+        align-items: end;
+
+        .content {
+            padding: 50px;
+
+            p {
+                margin-bottom: 40px;
+                // width: 505px;
+                @include styleText(48px, 36px, $color-black-2, $ff-2, 900);
+            }
+
+            span {
+                @include styleText(32px, $fs-1, $color-yellow-2, $ff-1, 600);
+            }
+
+        }
+    }
+
+
+}

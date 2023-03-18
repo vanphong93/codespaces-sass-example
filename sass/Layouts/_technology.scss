@@ -1,0 +1,59 @@
+.technology {
+    background-color: black;
+    position: relative;
+
+    .technology_container {
+        width: 80%;
+        margin: 0 auto;
+        .content {
+            width: 50%;
+
+            h3:first-child {
+                @include styleText(24px, $fs-1, $color-gray-1, $ff-0, 500);
+                padding: 80px 0 20px;
+            }
+
+            h1 {
+                @include styleText (72px, 64px, white, $ff-1, 600)
+            }
+
+            p {
+                @include styleText (36px, $fs-1, $color-gray-1, $ff-0, 400);
+                margin: 20px 0;
+            }
+
+            a {
+                @include styleText (36px, $fs-1, $color-yellow-1, $ff-1, 600);
+            }
+
+            .bottom {
+                margin-top: 80px;
+                display: flex;
+                padding-bottom: 80px;
+
+                .item {
+                    margin-right: 40px;
+
+                    h3 {
+                        @include styleText(36px, $fs-1, $color-gray-1, $ff-1, 500);
+                    }
+
+                    p {
+                        @include styleText(24px, $fs-0 - 2, $color-gray-1, $ff-0, 400);
+                    }
+                }
+            }
+
+        }
+
+        .image img {
+            position: absolute;
+            width: 600px;
+            height: 1050px;
+            object-fit: fill;
+            right: 70px;
+            top: -80px;
+
+        }
+    }
+}

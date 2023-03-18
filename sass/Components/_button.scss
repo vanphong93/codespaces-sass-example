@@ -1,0 +1,30 @@
+button.btn-yellow {
+    background: $color-button-0;
+    border-radius: 5px;
+    padding: 16px 32px;
+    font-family: $ff-1;
+    font-weight: $fw-1;
+    font-size: $fs-0;
+    border: none;
+    &:hover {
+        @include styleHover(red, null, 0.5s);
+
+    }
+}
+
+button.btn-silver {
+    background: $color-black-1;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0 0 20px;
+    padding: 16px 32px;
+    font-family: $ff-1;
+    font-weight: $fw-1;
+    font-size: $fs-0;
+    color: #CCCCCC;
+
+    &:hover {
+        @include styleHover(red, null, 0.5s);
+
+    }
+}

@@ -1,0 +1,94 @@
+.safety {
+    background-color: $color-black-1;
+padding: 80px 0;
+    .safety_container {
+        width: 80%;
+        // border: 1px solid red;
+        margin: auto;
+
+        h1.title_top {
+            @include styleText(72px, $fs-3, $color-gray-3, $ff-1, 600);
+        }
+
+        .content {
+            // border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            column-gap: 40px;
+
+            .item {
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding: 15px 40px 40px 40px;
+                background-color: black;
+                height: 396px;
+
+                .container {
+                    .title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h1 {
+                            display: inline;
+                            @include styleText(48px,
+                                $fs-2 + 4,
+                                $color-gray-0,
+                                $ff-1,
+                                600);
+                            margin-left: 20px;
+                        }
+
+                        .price {
+                            display: flex;
+                            flex-direction: column;
+
+                            span:first-child {
+                                @include styleText(48px,
+                                    36px,
+                                    white,
+                                    $ff-1,
+                                    600);
+                            }
+
+                            span:last-child {
+                                text-align: right;
+                                @include styleText(16px,
+                                    12px,
+                                    $color-gray-0,
+                                    $ff-1,
+                                    600);
+                            }
+                        }
+                    }
+
+                    .feature {
+                        margin-top: 30px;
+
+                        ul li {
+                            list-style-type: none;
+                            margin-bottom: 20px;
+
+                            i {
+                                color: $color-yellow-0;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .item:last-child {
+                padding: 30px 40px 40px 40px;
+                background-color: black;
+                height: 484px;
+                .container {
+                    .title h1 {
+                        color: $color-yellow-0;
+                    }
+                }
+            }
+        }
+    }
+}
